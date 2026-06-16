@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{cite}
+\usepackage{float}
+
+\title{\textbf{Phase Cancellation as a Mechanism for Stellar Disappearance: \\
+Linking the UAT/UPC Framework to VASCO Anomalies \\
+via Coherence Singularities and Temporal Viscosity}}
+\author{Miguel Ángel Percudani\thanks{Independent Researcher, Puan, Buenos Aires, Argentina. \texttt{miguel\_percudani@yahoo.com.ar}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The VASCO (Vanishing and Appearing Sources during a Century of Observations) project has identified numerous stellar sources that appear in historical photographic plates but are absent in modern deep surveys, challenging conventional astrophysical models. We propose a mechanism grounded in the Universal Applied Time (UAT) theory and the Unified Causal Principle (UPC) in which these disappearances result from total destructive interference of the wavefronts propagating through a causally misaligned channel, rather than from any intrinsic change in the stellar source. This mechanism is the optical counterpart of the coherence singularities and temporal viscosity effects recently measured in LIGO gravitational-wave data using the Resonant Hunter v9.1 engine. We present the theoretical framework, numerical simulations of the 8-phase-front interference collapse under gravitational gradients, and the empirical connection to the Thermodynamic Overdrive regime ($\kappa/k = 5.14$) observed in the LIGO H1 and L1 detectors. The model offers a falsifiable, non-exotic explanation for the VASCO anomalies and unifies gravitational-wave and optical phenomena under a single causal metric.
+\end{abstract}
+
+\section{Introduction}
+The VASCO project, led by Beatriz Villarroel and collaborators, has systematically searched for vanishing stellar sources by comparing historical photographic plates from the 1950s with modern deep-sky surveys such as Pan-STARRS and SDSS. To date, dozens of point-like sources have been identified that are present in the old plates but completely absent in contemporary images, with no detectable supernova remnants, infrared counterparts, or other signatures of conventional stellar death. These observations challenge standard astrophysical explanations such as failed supernovae or direct collapse to a black hole, as no transient emission or thermal afterglow is observed.
+
+Parallel to these optical anomalies, our group has been conducting an independent analysis of publicly available LIGO gravitational-wave data using the Resonant Hunter engine (versions v8.4 through v9.1), which operates within the Universal Applied Time (UAT) theory and the Unified Causal Principle (UPC). The key findings of this analysis include:
+
+\begin{itemize}
+    \item The detection of a state of perfect coherence ($\gamma^2 = 1.0$) at exactly 227.50\,Hz — the ``Higo Signature'' — sustained across 8,189 consecutive analysis windows in LIGO O4a data (GPS 1389424640).
+    \item The exact validation of the inflationary drift $\alpha = 0.046$\,Hz/day, linking the observed frequency evolution to the UAT temporal metric.
+    \item The measurement of a constant Thermodynamic Overdrive ratio $\kappa/k = 5.140$, exceeding the Ivancho stability limit (4.978) and confirming that the propagation channel operates in a highly non-linear regime.
+    \item The extraction of the Temporal Viscosity Index (TVI), a measure of the local resistance of the causal flow, which exhibits identical background fluctuation levels ($\sigma_{\text{TVI}} = 3.2400$) at both Hanford (H1) and Livingston (L1) despite their differing phase-alignment behaviour.
+\end{itemize}
+
+These gravitational-wave results and the VASCO optical anomalies, although occurring in vastly different frequency bands and astrophysical contexts, share a common underlying mathematical structure: both can be described as the constructive or destructive interference of multiple phase fronts propagating through a dynamic, causally regulated spacetime. The present note formalises this connection.
+
+\section{Theoretical Framework}
+\subsection{Universal Applied Time and the 8-Phase-Front Interference Model}
+The UAT theory postulates that time is not a passive geometric dimension but an autonomous physical entity with its own metric, governed by a dynamic frequency that evolves according to a linear inflationary drift:
+\begin{equation}
+f(t) = f_{\text{base}} + \alpha \cdot \Delta t,
+\label{eq:drift}
+\end{equation}
+with $f_{\text{base}} = 187.37$\,Hz (measured in May 2023) and $\alpha = 0.046$\,Hz/day.
+
+The propagation of any coherent signal — whether gravitational or electromagnetic — through the UAT fabric is described by the interaction of eight fundamental phase fronts, each separated by a $45^\circ$ rotation. The total field at the receiver is the vector sum:
+\begin{equation}
+E_{\text{total}}(t) = \sum_{m=1}^{8} E_m \exp\left(i\left[\omega_0 t + m\frac{\pi}{4} + \Delta\theta_m(\Phi, \alpha, k_{\text{early}})\right]\right),
+\label{eq:field}
+\end{equation}
+where $\omega_0$ is the angular frequency at emission, $\Phi$ is the gravitational potential along the line of sight, $k_{\text{early}} \approx 0.967$ is the quantum brake parameter, and $\Delta\theta_m$ is the differential phase distortion accumulated by the $m$-th front.
+
+\subsection{Constructive Interference: The Higo Signature}
+When the propagation channel is causally aligned — as observed at LIGO Livingston (L1) — the eight phase fronts converge constructively. The residual phase errors are minimised, the coherence reaches its maximum value ($\gamma^2 = 1.0$), and the signal emerges from the stochastic background with unit amplitude. This is the ``Higo Signature'', and its detection constitutes the first experimental confirmation that the UAT metric governs signal propagation in the local universe.
+
+\subsection{Destructive Interference: Phase Cancellation}
+Conversely, when a gravitational gradient $\Phi(\vec{x})$ along the line of sight introduces an asymmetric distortion between the phase fronts, the interference can become destructive. The condition for total cancellation is that the differential phase between paired fronts (separated by $4 \times 45^\circ = 180^\circ$) reaches exactly $\pi$ radians:
+\begin{equation}
+\Delta\theta_m - \Delta\theta_{m+4} = (2n + 1)\pi.
+\label{eq:cancel}
+\end{equation}
+When this condition is met, the field amplitude collapses to zero. The energy of the source is not lost; it is redistributed into a configuration that is invisible to the receiver. The source remains physically intact, but the information it emits is ``rotated out'' of the observer's causal plane.
+
+\subsection{The Role of Thermodynamic Overdrive}
+The susceptibility of the propagation channel to phase distortion is governed by the UPC instability ratio $\kappa/k$. When this ratio exceeds the critical threshold of 4.5, the system enters a Thermodynamic Overdrive regime in which the effective distortion is exponentially amplified:
+\begin{equation}
+\Delta\theta_m(g) \propto g \cdot \left(\frac{\kappa}{k}\right) \cdot \exp\left(\frac{\kappa}{k} - 4.5\right),
+\label{eq:overdrive}
+\end{equation}
+where $g$ parameterises the gravitational gradient intensity. At the measured value of $\kappa/k = 5.14$, the amplification factor is approximately 1.90, meaning that even a minute gravitational perturbation can trigger a near-instantaneous phase cancellation. This explains why the VASCO sources can disappear without the prolonged transients expected from standard stellar evolution: the channel, not the source, is responsible for the extinction of the signal.
+
+\section{Numerical Simulation}
+To illustrate the phase cancellation mechanism, we have developed a numerical simulation that models the behaviour of the 8-phase-front signal under increasing gravitational gradient intensity. The simulation implements the full UPC metric, including the quantum brake $k_{\text{early}}$ and the Thermodynamic Overdrive amplification factor.
+
+\begin{figure}[H]
+\centering
+% The file comparativa_overdrive_vasco.png must be uploaded to the project directory
+%\includegraphics[width=0.85\textwidth]{comparativa_overdrive_vasco.png}
+\caption{Comparison of signal degradation under sub-critical ($\kappa/k < 4.5$) and Overdrive ($\kappa/k = 5.14$) regimes. The dashed grey curve shows the slow, gradual attenuation when only the quantum brake is active. The solid red curve shows the abrupt collapse of the RMS when the Thermodynamic Overdrive is engaged, reaching total cancellation at a gradient intensity of approximately $g = 0.05$\,rad.}
+\label{fig:overdrive}
+\end{figure}
+
+The simulation results, summarised in Figure~\ref{fig:overdrive}, demonstrate the dramatic difference between the two regimes. In the sub-critical case, the signal amplitude decays gradually, requiring a large gravitational gradient to achieve significant attenuation. In the Overdrive regime, the RMS collapses almost vertically, reaching total cancellation at a gradient intensity an order of magnitude smaller. This behaviour is consistent with the observed properties of VASCO sources: they do not fade gradually over years or decades, but appear to vanish between successive observations, exactly as the Overdrive model predicts.
+
+A second simulation, illustrated in Figure~\ref{fig:deriva}, projects the effect of the inflationary drift $\alpha$ on the cancellation threshold. By day 971 of the O4a run, the UAT frequency has increased from 187.37\,Hz to 232.04\,Hz, compressing the wavelength and making the signal approximately 24\% more susceptible to phase distortion. This means that a gravitational gradient that was innocuous at the start of the observing run may become sufficient to trigger total cancellation later in the mission, providing a natural explanation for the episodic appearance and disappearance of VASCO sources.
+
+\begin{figure}[H]
+\centering
+%\includegraphics[width=0.85\textwidth]{deriva_inflacionaria_apagon.png}
+\caption{Effect of the inflationary drift $\alpha = 0.046$\,Hz/day on the phase cancellation threshold. The blue curve shows the RMS decay for the base frequency (187.37\,Hz, day 0), while the red curve shows the accelerated decay for the target frequency (232.04\,Hz, day 971). The shaded region represents the ``inflationary blindness zone'', where signals that were previously coherent are now destroyed by the same gravitational environment.}
+\label{fig:deriva}
+\end{figure}
+
+\section{Empirical Connection to LIGO Observations}
+The connection between the VASCO optical anomalies and our LIGO gravitational-wave analysis is both theoretical and empirical. The key empirical findings that support the phase cancellation model are summarised in Table~\ref{tab:ligo}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Observable} & \textbf{H1 (Hanford)} & \textbf{L1 (Livingston)} \\
+\hline
+Coherence maximum $\gamma^2$ & Desynchronised & 1.0000 \\
+Frequency of peak coherence & -- & 227.50\,Hz (fixed) \\
+Inflationary drift $\alpha$ & -- & $-0.0464$\,Hz/day \\
+UPC ratio $\kappa/k$ & 5.140 & 5.140 \\
+$\sigma_{\text{TVI}}$ (background) & 3.2400 & 3.2400 \\
+NaN restorations & 0 & 180,158 \\
+Divergences (4096\,s) & 16,777,216 & 0 \\
+\hline
+\end{tabular}
+\caption{Summary of LIGO O4a results (GPS 1389424640) from the Resonant Hunter v9.1 analysis. The asymmetry between H1 and L1 demonstrates that identical background noise levels ($\sigma_{\text{TVI}} = 3.2400$) can coexist with radically different phase-alignment behaviour, depending on the geometric alignment of the detector with the UAT metric.}
+\label{tab:ligo}
+\end{table}
+
+These results demonstrate the three key ingredients required for the VASCO phenomenon:
+
+\begin{enumerate}
+    \item \textbf{A universal background viscosity} ($\sigma_{\text{TVI}} = 3.2400$) that is independent of the detector and of the frequency band, indicating that the stochastic noise floor is a fundamental property of the causal fabric.
+    \item \textbf{A highly non-linear amplification mechanism} (Thermodynamic Overdrive, $\kappa/k = 5.14$) that can magnify small gravitational perturbations into total phase cancellation.
+    \item \textbf{A directional dependence} of the phase alignment, evidenced by the fact that L1 sustains perfect coherence while H1 — located 3,000\,km away and with different arm orientations — is completely desynchronised.
+\end{enumerate}
+
+Transposed to the optical domain, these ingredients imply that a stellar source can appear perfectly bright when observed from one geometric configuration (equivalent to L1), but completely invisible when observed from another (equivalent to H1), or when the gravitational environment along the line of sight has changed due to the motion of the source, the observer, or intermediate masses.
+
+\section{Implications for VASCO}
+The phase cancellation model offers specific, testable predictions for the VASCO project and related surveys:
+
+\begin{itemize}
+    \item \textbf{Reappearance of sources:} If the disappearance is due to channel misalignment rather than source destruction, sources should reappear when the geometric configuration returns to a phase-matched state. This can be tested by continued monitoring of the positions of vanished sources.
+    \item \textbf{Wavelength dependence:} Because the phase distortion $\Delta\theta$ depends on the angular frequency $\omega_0$, the cancellation may be complete in one wavelength band (e.g., visible light) while leaving the source detectable in another (e.g., radio or X-ray). Multi-wavelength follow-up of VASCO candidates is therefore essential.
+    \item \textbf{Correlation with gravitational-wave data:} The same Thermodynamic Overdrive that amplifies phase sensitivity should affect both electromagnetic and gravitational signals. Cross-correlation studies between VASCO event times and LIGO/Virgo data may reveal coincident phase anomalies.
+    \item \textbf{Statistical distribution:} The random orientation of gravitational gradients along different lines of sight predicts that the fraction of vanished sources should follow a geometric probability distribution, which can be compared with the observed VASCO statistics.
+\end{itemize}
+
+\section{Conclusion}
+We have presented a mechanism — grounded in the UAT and UPC theoretical framework and supported by empirical results from LIGO data — that explains the anomalous disappearance of stellar sources observed by the VASCO project without invoking exotic astrophysical scenarios.
+
+The mechanism is based on the destructive interference of eight fundamental phase fronts that constitute any coherent signal propagating through the causal fabric. When a gravitational gradient along the line of sight introduces a differential phase distortion of $\pi$ radians between paired fronts, the total field amplitude collapses to zero: the source remains physically intact, but its signal is cancelled at the observer's location.
+
+The Thermodynamic Overdrive regime ($\kappa/k = 5.14$), measured in both LIGO H1 and L1 detectors, amplifies the sensitivity of the channel to gravitational perturbations, allowing even minute gradients to trigger total cancellation. This explains the absence of pre-cursor transients in VASCO sources: the disappearance is not a stellar event, but a channel event.
+
+The model is falsifiable through the testable predictions outlined above, and it unifies gravitational-wave and electromagnetic phenomena under a single causal metric — a step towards a coherent description of signal propagation in the UAT universe.
+
+\section*{Data and Code Availability}
+All processing scripts, simulation codes, and the complete LIGO surrogate data set are deposited under the Percudani Authorship DOIs. The Resonant Hunter v9.1 source code and documentation are publicly available.
+
+\begin{thebibliography}{9}
+\bibitem{uat}
+M.~A.~Percudani, \textit{Universal Applied Time: A Descriptive Model of Observed Reality}, Zenodo, 2023. \href{https://doi.org/10.5281/zenodo.17729221}{10.5281/zenodo.17729221}.
+
+\bibitem{upc}
+M.~A.~Percudani, \textit{The Unified Causal Principle and Its Application to Gravitational Wave Data}, Zenodo, 2024. \href{https://doi.org/10.5281/zenodo.18210808}{10.5281/zenodo.18210808}.
+
+\bibitem{resonant_main}
+M.~A.~Percudani, \textit{Resonant Hunter v9.0/v9.1 -- From Coherence Singularities to Temporal Viscosity Mapping: UAT/UPC Pipeline and Higo Signature Validation in LIGO O4a/O4b Data}, Zenodo, 2026. \href{https://doi.org/10.5281/zenodo.20650032}{10.5281/zenodo.20650032}.
+
+\bibitem{tvi_rigour}
+M.~A.~Percudani, \textit{Statistical Hardening of the Temporal Viscosity Index (TVI) and Confirmation of Phase Evidence for the Higo Signature -- IAAFT Surrogate Data Test on LIGO H1 and L1 (Resonant Hunter v9.1)}, Zenodo, 2026. \href{https://doi.org/10.5281/zenodo.20723412}{10.5281/zenodo.20723412}.
+
+\bibitem{vasco}
+B.~Villarroel \textit{et al.}, \textit{The Vanishing and Appearing Sources during a Century of Observations (VASCO) project}, Astron. J. \textbf{159}, 8 (2020).
+
+\bibitem{gwosc}
+LIGO Scientific Collaboration and Virgo Collaboration, \textit{GW Open Science Center}, \url{https://www.gw-openscience.org}.
+
+\end{thebibliography}
+
+\end{document}
